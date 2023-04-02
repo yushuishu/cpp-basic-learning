@@ -1,4 +1,8 @@
-#include <iostream>
+// 定义头文件，这些头文件包含了程序中必需的或有用的信息，这里包含了 <iostream>头文件
+// <iostream>是一个输入输出流相关的头文件。里面包含了一些对输入输出流操作的方法。
+#include<iostream>
+
+// 告诉编译器使用 std 命名空间。命名空间是 C++ 中一个相对新的概念
 using namespace std;
 
 /*
@@ -13,7 +17,8 @@ using namespace std;
 
 */
 int main() {
-	// 输出
+	// cout 输出
+	// << endl 换行
 	cout << "hello C++" << endl;
 	// 暂停运行：任意键，或者使用 getchar();
 	//system("pause");
