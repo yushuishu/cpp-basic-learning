@@ -48,5 +48,31 @@
     <ClCompile Include="10-冒泡排序.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="12-函数定义.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="13-值传递和引用传递.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="14-函数声明.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="15-函数分文件编写.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="15-swap.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="16-指针.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="17-空指针和野指针.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="swap.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
