@@ -51,7 +51,7 @@
     <ClCompile Include="12-函数定义.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="13-值传递和引用传递.cpp">
+    <ClCompile Include="13-值传递.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="14-函数声明.cpp">
@@ -76,6 +76,12 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="20-指针和函数.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="21-结构体.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="22-结构体指针.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
