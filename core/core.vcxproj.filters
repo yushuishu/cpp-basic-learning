@@ -84,7 +84,10 @@
     <ClCompile Include="23-关系运算符重载.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="24-运算符重载.cpp">
+    <ClCompile Include="24-仿函数运算符重载.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="25-多态.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
