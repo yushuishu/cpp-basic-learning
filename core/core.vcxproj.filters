@@ -90,5 +90,17 @@
     <ClCompile Include="25-多态.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="26-多态-计算器案列.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="27-纯虚函数.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="28-虚析构和纯虚析构.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="29-IO.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
