@@ -16,12 +16,12 @@ void myPrint(int a, int b) {
 	cout << "调用普通函数" << endl;
 }
 
-template<class T>
+template<typename T>
 void myPrint(T a, T b) {
 	cout << "调用模板函数" << endl;
 }
 
-template<class T>
+template<typename T>
 void myPrint(T a, T b, T c) {
 	cout << "调用模板函数" << endl;
 }

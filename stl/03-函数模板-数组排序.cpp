@@ -13,7 +13,7 @@ using namespace std;
 
 
 // 交换元素
-template<class T>
+template<typename T>
 void mySwap(T& a, T& b) {
 	T temp = a;
 	a = b;
@@ -21,7 +21,7 @@ void mySwap(T& a, T& b) {
 }
 
 //排序算法
-template<class T>
+template<typename T>
 void mySort(T arr[], int len) {
 	for (int i = 0; i < len; i++)
 	{
@@ -43,7 +43,7 @@ void mySort(T arr[], int len) {
 
 
 // 打印数组模板
-template<class T>
+template<typename T>
 void printArray(T arr[], int len) {
 	for (int i = 0; i < len; i++)
 	{
