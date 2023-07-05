@@ -24,6 +24,7 @@
     <ProjectGuid>{907edf76-a2fc-4446-b632-cf5015caa592}</ProjectGuid>
     <RootNamespace>stl</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>template</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -160,10 +161,14 @@
     <ClCompile Include="11-类模板分文件编写.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="12-类模板与友元.cpp" />
+    <ClCompile Include="12-类模板与友元.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="13-案列-数组类封装.cpp" />
     <ClCompile Include="person.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="MyArray.hpp" />
     <ClInclude Include="person.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
