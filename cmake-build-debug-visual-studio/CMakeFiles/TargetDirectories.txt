@@ -61,5 +61,11 @@ D:/itlike/workSpaceStudy/C&C++/base/cpp-basic-learning/cmake-build-debug-visual-
 D:/itlike/workSpaceStudy/C&C++/base/cpp-basic-learning/cmake-build-debug-visual-studio/CMakeFiles/11-class_template_sub_file_write.dir
 D:/itlike/workSpaceStudy/C&C++/base/cpp-basic-learning/cmake-build-debug-visual-studio/CMakeFiles/12-class_template_and_friend.dir
 D:/itlike/workSpaceStudy/C&C++/base/cpp-basic-learning/cmake-build-debug-visual-studio/CMakeFiles/13-case_column_array_package.dir
+D:/itlike/workSpaceStudy/C&C++/base/cpp-basic-learning/cmake-build-debug-visual-studio/CMakeFiles/02-vector_built_in_data_type.dir
+D:/itlike/workSpaceStudy/C&C++/base/cpp-basic-learning/cmake-build-debug-visual-studio/CMakeFiles/03-vector_custom_data_type.dir
+D:/itlike/workSpaceStudy/C&C++/base/cpp-basic-learning/cmake-build-debug-visual-studio/CMakeFiles/04-vector_nested_vector.dir
+D:/itlike/workSpaceStudy/C&C++/base/cpp-basic-learning/cmake-build-debug-visual-studio/CMakeFiles/05-string_constructor_function.dir
+D:/itlike/workSpaceStudy/C&C++/base/cpp-basic-learning/cmake-build-debug-visual-studio/CMakeFiles/06-string_assignment.dir
+D:/itlike/workSpaceStudy/C&C++/base/cpp-basic-learning/cmake-build-debug-visual-studio/CMakeFiles/07-string_splice.dir
 D:/itlike/workSpaceStudy/C&C++/base/cpp-basic-learning/cmake-build-debug-visual-studio/CMakeFiles/edit_cache.dir
 D:/itlike/workSpaceStudy/C&C++/base/cpp-basic-learning/cmake-build-debug-visual-studio/CMakeFiles/rebuild_cache.dir
