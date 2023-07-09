@@ -1,146 +1,141 @@
 #include<iostream>
 #include<string>
 #include<fstream>
+
 using namespace std;
 
 
-
-// ÎÄ±¾ÎÄ¼ş Ğ´ÎÄ¼ş
+// æ–‡æœ¬æ–‡ä»¶ å†™æ–‡ä»¶
 void test1() {
-	// 1¡¢Í·ÎÄ¼ş #include<fstream>
+    // 1ã€å¤´æ–‡ä»¶ #include<fstream>
 
-	// 2¡¢´´½¨Á÷¶ÔÏó
-	ofstream ofs;
+    // 2ã€åˆ›å»ºæµå¯¹è±¡
+    ofstream ofs;
 
-	// 3¡¢Ö¸¶¨´ò¿ª·½Ê½£¬¿ÉÒÔÊ¹ÓÃ | ÅäºÏÊ¹ÓÃ£¬Èç£ºios::out | ios:binary
-	//    ios::in	   ¶ÁÎÄ¼ş·½Ê½´ò¿ª
-	//	  ios::out     Ğ´ÎÄ¼ş·½Ê½´ò¿ª
-	//	  ios::ate     ³õÊ¼Î»ÖÃ£¬ÎÄ¼şÄ©Î²
-	//    ios::app     ×·¼Ó·½Ê½Ğ´ÎÄ¼ş
-	//    ios:trunc    Èç¹ûÎÄ¼ş´æÔÚÏÈÉ¾³ı£¬ÔÙ´´½¨
-	//    ios:binary   ¶ş½øÖÆ·½Ê½
-	ofs.open("test.txt", ios::out);
+    // 3ã€æŒ‡å®šæ‰“å¼€æ–¹å¼ï¼Œå¯ä»¥ä½¿ç”¨ | é…åˆä½¿ç”¨ï¼Œå¦‚ï¼šios::out | ios:binary
+    //    ios::in	   è¯»æ–‡ä»¶æ–¹å¼æ‰“å¼€
+    //	  ios::out     å†™æ–‡ä»¶æ–¹å¼æ‰“å¼€
+    //	  ios::ate     åˆå§‹ä½ç½®ï¼Œæ–‡ä»¶æœ«å°¾
+    //    ios::app     è¿½åŠ æ–¹å¼å†™æ–‡ä»¶
+    //    ios:trunc    å¦‚æœæ–‡ä»¶å­˜åœ¨å…ˆåˆ é™¤ï¼Œå†åˆ›å»º
+    //    ios:binary   äºŒè¿›åˆ¶æ–¹å¼
+    ofs.open("test.txt", ios::out);
 
-	// 4¡¢Ğ´ÄÚÈİ
-	ofs << "ĞÕÃû£ºÕÅÈı" << endl;
-	ofs << "ĞÔ±ğ£ºÄĞ" << endl;
-	ofs << "ÄêÁä£º20" << endl;
+    // 4ã€å†™å†…å®¹
+    ofs << "å§“åï¼šå¼ ä¸‰" << endl;
+    ofs << "æ€§åˆ«ï¼šç”·" << endl;
+    ofs << "å¹´é¾„ï¼š20" << endl;
 
-	// 5¡¢¹Ø±ÕÎÄ¼ş
-	ofs.close();
+    // 5ã€å…³é—­æ–‡ä»¶
+    ofs.close();
 
 }
 
-// ÎÄ±¾ÎÄ¼ş  ¶ÁÎÄ¼ş
+// æ–‡æœ¬æ–‡ä»¶  è¯»æ–‡ä»¶
 void test2() {
-	// 1¡¢Í·ÎÄ¼ş #include<fstream>
+    // 1ã€å¤´æ–‡ä»¶ #include<fstream>
 
-	// 2¡¢´´½¨Á÷¶ÔÏó
-	ifstream ifs;
+    // 2ã€åˆ›å»ºæµå¯¹è±¡
+    ifstream ifs;
 
-	// 3¡¢Ö¸¶¨´ò¿ª·½Ê½
-	ifs.open("test.txt", ios::in);
+    // 3ã€æŒ‡å®šæ‰“å¼€æ–¹å¼
+    ifs.open("test.txt", ios::in);
 
-	// 4¡¢ÅĞ¶ÏÊÇ·ñ´ò¿ª³É¹¦
-	if (!ifs.is_open()) {
-		cout << "´ò¿ªÎÄ¼şÊ§°Ü" << endl;
-		return;
-	}
+    // 4ã€åˆ¤æ–­æ˜¯å¦æ‰“å¼€æˆåŠŸ
+    if (!ifs.is_open()) {
+        cout << "æ‰“å¼€æ–‡ä»¶å¤±è´¥" << endl;
+        return;
+    }
 
-	// 5¡¢¶ÁÊı¾İ
-	// µÚÒ»ÖÖ
-	char buf[1024] = { 0 };
-	while (ifs >> buf)
-	{
-		cout << buf << endl;
-	}
-	// µÚ¶şÖÖ
-	/*char buf[1024] = { 0 };
-	while (ifs.getline(buf, sizeof(buf)))
-	{
-		cout << buf << endl;
-	}*/
-	// µÚÈıÖÖ
-	/*string buf;
-	while (getline(ifs, buf))
-	{
-		cout << buf << endl;
-	}*/
-	// µÚËÄÖÖ
-	/*char c;
-	while ((c = ifs.get()) != EOF)
-	{
-		cout << c;
-	}*/
+    // 5ã€è¯»æ•°æ®
+    // ç¬¬ä¸€ç§
+    char buf[1024] = {0};
+    while (ifs >> buf) {
+        cout << buf << endl;
+    }
+    // ç¬¬äºŒç§
+    /*char buf[1024] = { 0 };
+    while (ifs.getline(buf, sizeof(buf)))
+    {
+        cout << buf << endl;
+    }*/
+    // ç¬¬ä¸‰ç§
+    /*string buf;
+    while (getline(ifs, buf))
+    {
+        cout << buf << endl;
+    }*/
+    // ç¬¬å››ç§
+    /*char c;
+    while ((c = ifs.get()) != EOF)
+    {
+        cout << c;
+    }*/
 
 
-	// 6¡¢¹Ø±ÕÎÄ¼ş
-	ifs.close();
+    // 6ã€å…³é—­æ–‡ä»¶
+    ifs.close();
 
 }
 
-// ¶ş½øÖÆÊı¾İ¶ÔÏó
-class Person
-{
+// äºŒè¿›åˆ¶æ•°æ®å¯¹è±¡
+class Person {
 public:
-	char m_name[64]; // ĞÕÃû
-	int m_age; // ÄêÁä
+    char m_name[64]; // å§“å
+    int m_age; // å¹´é¾„
 
 };
 
-// ¶ş½øÖÆ Ğ´ÎÄ¼ş
+// äºŒè¿›åˆ¶ å†™æ–‡ä»¶
 void test3() {
-	// 1¡¢Í·ÎÄ¼ş #include<fstream>
-	
-	// 2¡¢´´½¨Á÷¶ÔÏó
-	ofstream ofs;
+    // 1ã€å¤´æ–‡ä»¶ #include<fstream>
 
-	// 3¡¢Ö¸¶¨´ò¿ª·½Ê½
-	ofs.open("person.txt", ios::out | ios::binary);
+    // 2ã€åˆ›å»ºæµå¯¹è±¡
+    ofstream ofs;
 
-	// 4¡¢Ğ´ÎÄ¼şÊı¾İ
-	Person p = { "ÕÅÈı", 20 };
-	ofs.write((const char*)&p, sizeof(Person));
+    // 3ã€æŒ‡å®šæ‰“å¼€æ–¹å¼
+    ofs.open("person.txt", ios::out | ios::binary);
 
-	// 5¡¢¹Ø±ÕÎÄ¼ş
-	ofs.close();
+    // 4ã€å†™æ–‡ä»¶æ•°æ®
+    Person p = {"å¼ ä¸‰", 20};
+    ofs.write((const char *) &p, sizeof(Person));
+
+    // 5ã€å…³é—­æ–‡ä»¶
+    ofs.close();
 }
 
-// ¶ş½øÖÆ ¶ÁÎÄ¼ş
+// äºŒè¿›åˆ¶ è¯»æ–‡ä»¶
 void test4() {
-	// 1¡¢Í·ÎÄ¼ş #include<fstream>
+    // 1ã€å¤´æ–‡ä»¶ #include<fstream>
 
-	// 2¡¢´´½¨Á÷¶ÔÏó
-	ifstream ifs;
+    // 2ã€åˆ›å»ºæµå¯¹è±¡
+    ifstream ifs;
 
-	// 3¡¢Ö¸¶¨´ò¿ª·½Ê½
-	ifs.open("person.txt", ios::in | ios::binary);
+    // 3ã€æŒ‡å®šæ‰“å¼€æ–¹å¼
+    ifs.open("person.txt", ios::in | ios::binary);
 
-	// 4¡¢ÅĞ¶ÏÊÇ·ñ´ò¿ª³É¹¦
-	if (!ifs.is_open()) {
-		cout << "´ò¿ªÎÄ¼şÊ§°Ü" << endl;
-		return;
-	}
+    // 4ã€åˆ¤æ–­æ˜¯å¦æ‰“å¼€æˆåŠŸ
+    if (!ifs.is_open()) {
+        cout << "æ‰“å¼€æ–‡ä»¶å¤±è´¥" << endl;
+        return;
+    }
 
-	// 5¡¢¶ÁÎÄ¼şÊı¾İ
-	Person p;
-	ifs.read((char*)&p, sizeof(Person));
-	cout << "ĞÕÃû£º" << p.m_name << " ÄêÁä£º" << p.m_age << endl;
+    // 5ã€è¯»æ–‡ä»¶æ•°æ®
+    Person p;
+    ifs.read((char *) &p, sizeof(Person));
+    cout << "å§“åï¼š" << p.m_name << " å¹´é¾„ï¼š" << p.m_age << endl;
 
-	// 6¡¢¹Ø±ÕÎÄ¼ş
-	ifs.close();
+    // 6ã€å…³é—­æ–‡ä»¶
+    ifs.close();
 }
-
-
-
 
 
 int main() {
-	// ÎÄ±¾ÎÄ¼ş
-	//test1();
-	//test2();
+    // æ–‡æœ¬æ–‡ä»¶
+    //test1();
+    //test2();
 
-	// ¶ş½øÖÆ
-	//test3();
-	test4();
+    // äºŒè¿›åˆ¶
+    //test3();
+    test4();
 }

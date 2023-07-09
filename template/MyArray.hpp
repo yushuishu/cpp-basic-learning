@@ -1,117 +1,110 @@
 #pragma once
+
 #include<iostream>
+
 using namespace std;
 
 
 template<class T>
-class  MyArray
-{
+class MyArray {
 public:
-	// ÓĞ²Î¹¹Ôì
-	MyArray(int capacity) 
-	{
-		cout << "ÓĞ²Î¹¹Ôìº¯Êı" << endl;
-		this->m_capacity = capacity;
-		this->m_size = 0;
-		this->m_arr = new T[capacity];
-	}
-	// ¿½±´¹¹Ôì
-	MyArray(const MyArray& arr)
-	{
-		cout << "¿½±´¹¹Ôìº¯Êı" << endl;
-		this->m_capacity = arr.m_capacity;
-		this->m_size = arr.m_size;
-		//this->m_arr = arr.m_arr;
+    // æœ‰å‚æ„é€ 
+    MyArray(int capacity) {
+        cout << "æœ‰å‚æ„é€ å‡½æ•°" << endl;
+        this->m_capacity = capacity;
+        this->m_size = 0;
+        this->m_arr = new T[capacity];
+    }
 
-		// Éî¿½±´
-		this->m_arr = new T[arr.m_capacity];
-		// ½« arr ÖĞµÄÊı¾İ¶¼¿½±´³öÀ´
-		for (int i = 0; i < this->m_size; i++)
-		{
-			this->m_arr[i] = arr.m_arr[i];
-		}
-	}
-	// operator= ·ÀÖ¹Ç³¿½±´ÎÊÌâ
-	MyArray& operator=(const MyArray& arr) 
-	{
-		cout << "operator=·ÀÖ¹Ç³¿½±´ÎÊÌâº¯Êı" << endl;
-		// ÏÈÅĞ¶ÏÔ­À´¶ÑÇøÊÇ·ñÓĞÊı¾İ£¬Èç¹ûÓĞÏÈÊÍ·Å
-		if (this->m_arr != NULL)
-		{
-			delete[] this->m_arr;
-			this->m_arr = NULL;
-			this->m_capacity = 0;
-			this->m_size = 0;
-		}
+    // æ‹·è´æ„é€ 
+    MyArray(const MyArray &arr) {
+        cout << "æ‹·è´æ„é€ å‡½æ•°" << endl;
+        this->m_capacity = arr.m_capacity;
+        this->m_size = arr.m_size;
+        //this->m_arr = arr.m_arr;
 
-		// Éî¿½±´
-		this->m_capacity = arr.m_capacity;
-		this->m_size = arr.m_size;
-		this->m_arr = new T[this->m_capacity];
-		for (int i = 0; i < this->m_size; i++)
-		{
-			this->m_arr[i] = arr.m_arr[i];
-		}
-		return *this;
-	}
-	//Îö¹¹º¯Êı
-	 ~MyArray() 
-	 {
-		 cout << "Îö¹¹º¯Êı" << endl;
-		 if (this->m_arr != NULL)
-		 {
-			 delete[] this->m_arr;
-			 this->m_arr = NULL;
-		 }
-	}
+        // æ·±æ‹·è´
+        this->m_arr = new T[arr.m_capacity];
+        // å°† arr ä¸­çš„æ•°æ®éƒ½æ‹·è´å‡ºæ¥
+        for (int i = 0; i < this->m_size; i++) {
+            this->m_arr[i] = arr.m_arr[i];
+        }
+    }
 
-	 // Î²²å·¨
-	 void push_back(const T &val) {
-		 // ÅĞ¶ÏÈİÁ¿ÊÇ·ñµÈÓÚ´óĞ¡
-		 if (this->m_capacity == this->m_size)
-		 {
-			 return;
-		 }
-		 this->m_arr[this->m_size] = val;
-		 this->m_size++;
-	 }
+    // operator= é˜²æ­¢æµ…æ‹·è´é—®é¢˜
+    MyArray &operator=(const MyArray &arr) {
+        cout << "operator=é˜²æ­¢æµ…æ‹·è´é—®é¢˜å‡½æ•°" << endl;
+        // å…ˆåˆ¤æ–­åŸæ¥å †åŒºæ˜¯å¦æœ‰æ•°æ®ï¼Œå¦‚æœæœ‰å…ˆé‡Šæ”¾
+        if (this->m_arr != NULL) {
+            delete[] this->m_arr;
+            this->m_arr = NULL;
+            this->m_capacity = 0;
+            this->m_size = 0;
+        }
 
-	 // Î²É¾·¨
-	 void pop_back() {
-		 if (this->m_size > 0)
-		 {
-			 this->m_size--;
-		 }
-	 }
+        // æ·±æ‹·è´
+        this->m_capacity = arr.m_capacity;
+        this->m_size = arr.m_size;
+        this->m_arr = new T[this->m_capacity];
+        for (int i = 0; i < this->m_size; i++) {
+            this->m_arr[i] = arr.m_arr[i];
+        }
+        return *this;
+    }
 
-	 // ÏÂ±ê·ÃÎÊÊı×éÖĞµÄÔªËØ
-	 T& operator[](int index) {
-		 return this->m_arr[index];
-	 }
+    //ææ„å‡½æ•°
+    ~MyArray() {
+        cout << "ææ„å‡½æ•°" << endl;
+        if (this->m_arr != NULL) {
+            delete[] this->m_arr;
+            this->m_arr = NULL;
+        }
+    }
 
-	 // Êı×éÈİÁ¿
-	 int getCapacity() {
-		 return this->m_capacity;
-	 }
+    // å°¾æ’æ³•
+    void push_back(const T &val) {
+        // åˆ¤æ–­å®¹é‡æ˜¯å¦ç­‰äºå¤§å°
+        if (this->m_capacity == this->m_size) {
+            return;
+        }
+        this->m_arr[this->m_size] = val;
+        this->m_size++;
+    }
 
-	 // Êı×é´óÏÂ
-	 int getSize() {
-		 return this->m_size;
-	 }
+    // å°¾åˆ æ³•
+    void pop_back() {
+        if (this->m_size > 0) {
+            this->m_size--;
+        }
+    }
 
-	 // ´òÓ¡Êä³ö
-	 void printArray() {
-		 for (size_t i = 0; i < this->m_size; i++)
-		 {
-			 cout << this->m_arr[i] << "    ";
-		 }
-		 cout << endl;
-	 }
+    // ä¸‹æ ‡è®¿é—®æ•°ç»„ä¸­çš„å…ƒç´ 
+    T &operator[](int index) {
+        return this->m_arr[index];
+    }
+
+    // æ•°ç»„å®¹é‡
+    int getCapacity() {
+        return this->m_capacity;
+    }
+
+    // æ•°ç»„å¤§ä¸‹
+    int getSize() {
+        return this->m_size;
+    }
+
+    // æ‰“å°è¾“å‡º
+    void printArray() {
+        for (size_t i = 0; i < this->m_size; i++) {
+            cout << this->m_arr[i] << "    ";
+        }
+        cout << endl;
+    }
 
 private:
-	T* m_arr;
-	int m_capacity;
-	int m_size;
+    T *m_arr;
+    int m_capacity;
+    int m_size;
 };
 
 

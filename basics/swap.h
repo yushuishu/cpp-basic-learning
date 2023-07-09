@@ -1,10 +1,12 @@
 #pragma once
+
 #include<iostream>
+
 using namespace std;
 
 
-// ÉùÃ÷
+// ï¿½ï¿½ï¿½ï¿½
 void swap(int num1, int num2);
 
-// ÉùÃ÷
+// ï¿½ï¿½ï¿½ï¿½
 void swap2(int *p1, int *p2);

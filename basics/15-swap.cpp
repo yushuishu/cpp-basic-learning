@@ -1,18 +1,22 @@
 #include "swap.h"
 
 
+/*
+ * äº¤æ¢æ•°æ®å‡½æ•°ï¼Œå‡½æ•°å®ç°
+ * */
+
 void swap(int num1, int num2) {
-	cout << "½»»»Ç° num1 = " << num1 << endl;
-	cout << "½»»»Ç° num2 = " << num2 << endl;
-	int temp = num1;
-	num1 = num2;
-	num2 = temp;
-	cout << "½»»»ºó num1 = " << num1 << endl;
-	cout << "½»»»ºó num2 = " << num2 << endl;
+    cout << "num1 = " << num1 << endl;
+    cout << "num2 = " << num2 << endl;
+    int temp = num1;
+    num1 = num2;
+    num2 = temp;
+    cout << "num1 = " << num1 << endl;
+    cout << "num2 = " << num2 << endl;
 }
 
 void swap2(int *p1, int *p2) {
-	int temp = *p1;
-	*p1 = *p2;
-	*p2 = temp;
+    int temp = *p1;
+    *p1 = *p2;
+    *p2 = temp;
 }

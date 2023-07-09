@@ -1,0 +1,6 @@
+# ninja log v5
+1	71	7106017626353778	build.ninja	35d1a2d8bd25c52d
+369	681	7105948656053965	02-variable.exe	b970da570703d3f1
+1	367	7105948653101368	CMakeFiles/02-variable.dir/basics/02-variable.cpp.obj	c1ecbe09e92fd4f2
+0	496	7105949008104451	CMakeFiles/01-HelloWorld.dir/basics/01-HelloWorld.cpp.obj	508d4970b095315b
+496	818	7105949011144549	01-HelloWorld.exe	c28dbcdba0aff639

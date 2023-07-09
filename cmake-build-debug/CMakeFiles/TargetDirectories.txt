@@ -1,0 +1,3 @@
+D:/itlike/workSpaceStudy/C&C++/base/cpp-basic-learning/cmake-build-debug/CMakeFiles/01-HelloWorld.dir
+D:/itlike/workSpaceStudy/C&C++/base/cpp-basic-learning/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/itlike/workSpaceStudy/C&C++/base/cpp-basic-learning/cmake-build-debug/CMakeFiles/rebuild_cache.dir

@@ -1,28 +1,28 @@
-// ¶¨ÒåÍ·ÎÄ¼þ£¬ÕâÐ©Í·ÎÄ¼þ°üº¬ÁË³ÌÐòÖÐ±ØÐèµÄ»òÓÐÓÃµÄÐÅÏ¢£¬ÕâÀï°üº¬ÁË <iostream>Í·ÎÄ¼þ
-// <iostream>ÊÇÒ»¸öÊäÈëÊä³öÁ÷Ïà¹ØµÄÍ·ÎÄ¼þ¡£ÀïÃæ°üº¬ÁËÒ»Ð©¶ÔÊäÈëÊä³öÁ÷²Ù×÷µÄ·½·¨¡£
+// å®šä¹‰å¤´æ–‡ä»¶ï¼Œè¿™äº›å¤´æ–‡ä»¶åŒ…å«äº†ç¨‹åºä¸­å¿…éœ€çš„æˆ–æœ‰ç”¨çš„ä¿¡æ¯ï¼Œè¿™é‡ŒåŒ…å«äº† <iostream>å¤´æ–‡ä»¶
+// <iostream>æ˜¯ä¸€ä¸ªè¾“å…¥è¾“å‡ºæµç›¸å…³çš„å¤´æ–‡ä»¶ã€‚é‡Œé¢åŒ…å«äº†ä¸€äº›å¯¹è¾“å…¥è¾“å‡ºæµæ“ä½œçš„æ–¹æ³•ã€‚
 #include<iostream>
 
-// ¸æËß±àÒëÆ÷Ê¹ÓÃ std ÃüÃû¿Õ¼ä¡£ÃüÃû¿Õ¼äÊÇ C++ ÖÐÒ»¸öÏà¶ÔÐÂµÄ¸ÅÄî
+// å‘Šè¯‰ç¼–è¯‘å™¨ä½¿ç”¨ std å‘½åç©ºé—´ã€‚å‘½åç©ºé—´æ˜¯ C++ ä¸­ä¸€ä¸ªç›¸å¯¹æ–°çš„æ¦‚å¿µ
 using namespace std;
 
 /*
-1¡¢ÐÂ½¨ÏîÄ¿
-2¡¢c++ÓïÑÔ
-3¡¢Ñ¡Ôñ¿ÕÏîÄ¿
-4¡¢ÏîÄ¿Ãû³Æ£»ÀàËÆÓÚ Javaweb¿ª·¢ÖÐµÄmoduleÄ£¿é
-   ½â¾ö·½°¸£ºÀàËÆÓÚ Javaweb¿ª·¢´´½¨µÄ¹¤³Ì
-5¡¢Visual Studio ´´½¨¹¤³ÌÖ®ºó£¬ÔÚ×ó±ß´°¿Ú½â¾ö·½°¸ÏÂµÄµÄÏîÄ¿°ü£¨moduleÄ£¿é£©ÏÂµÄÔ´ÎÄ¼þÖÐ´´½¨ Êó±êÓÒ¼ü -¡·Ìí¼Ó -¡·ÐÂ½¨Ïî -¡·ÎÄ¼þÃû³Æ£¨javaÀàÎÄ¼þÃû£©
-6¡¢±àÐ´ C++ ÈëÃÅ³ÌÐò mainº¯Êý£¬³ÌÐòÈë¿Ú£¬Ïàµ±ÓÚ java mainº¯Êý
-7¡¢±¾µØ Windows µ÷ÊÔÆ÷ £ºÔËÐÐ×Ô¶¯´ò¿ªcmd ºÚ´°¿Ú£¬Êä³ö ¡°hello C++¡±£¬²¢ÔÝÍ£³ÌÐò½áÊø£¬·½±ã¹Û²ì¡£
+1ã€æ–°å»ºé¡¹ç›®
+2ã€c++è¯­è¨€
+3ã€é€‰æ‹©ç©ºé¡¹ç›®
+4ã€é¡¹ç›®åç§°ï¼›ç±»ä¼¼äºŽ Javawebå¼€å‘ä¸­çš„moduleæ¨¡å—
+   è§£å†³æ–¹æ¡ˆï¼šç±»ä¼¼äºŽ Javawebå¼€å‘åˆ›å»ºçš„å·¥ç¨‹
+5ã€Visual Studio åˆ›å»ºå·¥ç¨‹ä¹‹åŽï¼Œåœ¨å·¦è¾¹çª—å£è§£å†³æ–¹æ¡ˆä¸‹çš„çš„é¡¹ç›®åŒ…ï¼ˆmoduleæ¨¡å—ï¼‰ä¸‹çš„æºæ–‡ä»¶ä¸­åˆ›å»º é¼ æ ‡å³é”® -ã€‹æ·»åŠ  -ã€‹æ–°å»ºé¡¹ -ã€‹æ–‡ä»¶åç§°ï¼ˆjavaç±»æ–‡ä»¶åï¼‰
+6ã€ç¼–å†™ C++ å…¥é—¨ç¨‹åº mainå‡½æ•°ï¼Œç¨‹åºå…¥å£ï¼Œç›¸å½“äºŽ java mainå‡½æ•°
+7ã€æœ¬åœ° Windows è°ƒè¯•å™¨ ï¼šè¿è¡Œè‡ªåŠ¨æ‰“å¼€cmd é»‘çª—å£ï¼Œè¾“å‡º â€œhello C++â€ï¼Œå¹¶æš‚åœç¨‹åºç»“æŸï¼Œæ–¹ä¾¿è§‚å¯Ÿã€‚
 
 */
 int main() {
-	// cout Êä³ö
-	// << endl »»ÐÐ
-	cout << "hello C++" << endl;
-	// ÔÝÍ£ÔËÐÐ£ºÈÎÒâ¼ü£¬»òÕßÊ¹ÓÃ getchar();
-	//system("pause");
-	getchar();
+    // cout è¾“å‡º
+    // << endl æ¢è¡Œ
+    cout << "ä½ å¥½cpp hello C++" << endl;
+    // æš‚åœè¿è¡Œï¼šä»»æ„é”®ï¼Œæˆ–è€…ä½¿ç”¨ getchar();
+    //system("pause");
+    //getchar();
 
-	return 0;
+    return 0;
 }
