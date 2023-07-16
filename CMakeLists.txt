@@ -41,7 +41,6 @@ add_executable(06-function_return_value_by_reference core/06-function_return_val
 add_executable(07-function_parameter_default_values core/07-function_parameter_default_values.cpp)
 add_executable(09-note_on_function_overloading core/09-note_on_function_overloading.cpp)
 add_executable(10-class core/10-class.cpp)
-
 add_executable(11-access_permission core/11-access_permission.cpp)
 add_executable(12-constructor_and_destructor core/12-constructor_and_destructor.cpp)
 add_executable(13-init_list core/13-init_list.cpp)
@@ -61,6 +60,7 @@ add_executable(26-polymorphic_calculator_case core/26-polymorphic_calculator_cas
 add_executable(27-pure_virtual_function core/27-pure_virtual_function.cpp)
 add_executable(28-virtual_destructor_and_pure_virtual_destructor core/28-virtual_destructor_and_pure_virtual_destructor.cpp)
 add_executable(29-IO core/29-IO.cpp)
+
 add_executable(01-function_template template/01-function_template.cpp)
 add_executable(02-function_template_notes template/02-function_template_notes.cpp)
 add_executable(03-function_template_array_sort template/03-function_template_array_sort.cpp)
@@ -80,3 +80,7 @@ add_executable(04-vector_nested_vector stl/04-vector_nested_vector.cpp)
 add_executable(05-string_constructor_function stl/05-string_constructor_function.cpp)
 add_executable(06-string_assignment stl/06-string_assignment.cpp)
 add_executable(07-string_splice stl/07-string_splice.cpp)
+add_executable(08-string_find_replace stl/08-string_find_replace.cpp)
+add_executable(09-string_compare stl/09-string_compare.cpp)
+add_executable(10-string_get stl/10-string_get.cpp)
+add_executable(11-string_insert_delete stl/11-string_insert_delete.cpp)

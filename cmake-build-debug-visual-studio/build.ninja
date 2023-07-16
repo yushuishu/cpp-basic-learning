@@ -2593,6 +2593,154 @@ build 07-string_splice.exe: CXX_EXECUTABLE_LINKER__07-string_splice_Debug CMakeF
   TARGET_IMPLIB = 07-string_splice.lib
   TARGET_PDB = 07-string_splice.pdb
 
+# =============================================================================
+# Object build statements for EXECUTABLE target 08-string_find_replace
+
+
+#############################################
+# Order-only phony target for 08-string_find_replace
+
+build cmake_object_order_depends_target_08-string_find_replace: phony || CMakeFiles\08-string_find_replace.dir
+
+build CMakeFiles\08-string_find_replace.dir\stl\08-string_find_replace.cpp.obj: CXX_COMPILER__08-string_find_replace_Debug D$:\itlike\workSpaceStudy\C&C++\base\cpp-basic-learning\stl\08-string_find_replace.cpp || cmake_object_order_depends_target_08-string_find_replace
+  FLAGS = /utf-8 /Zi /Ob0 /Od /RTC1 -MDd -std:c++17
+  INCLUDES = -I"D:\itlike\workSpaceStudy\C&C++\base\cpp-basic-learning\basics" -I"D:\itlike\workSpaceStudy\C&C++\base\cpp-basic-learning\core" -I"D:\itlike\workSpaceStudy\C&C++\base\cpp-basic-learning\stl" -I"D:\itlike\workSpaceStudy\C&C++\base\cpp-basic-learning\template"
+  OBJECT_DIR = CMakeFiles\08-string_find_replace.dir
+  OBJECT_FILE_DIR = CMakeFiles\08-string_find_replace.dir\stl
+  TARGET_COMPILE_PDB = CMakeFiles\08-string_find_replace.dir\
+  TARGET_PDB = 08-string_find_replace.pdb
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target 08-string_find_replace
+
+
+#############################################
+# Link the executable 08-string_find_replace.exe
+
+build 08-string_find_replace.exe: CXX_EXECUTABLE_LINKER__08-string_find_replace_Debug CMakeFiles\08-string_find_replace.dir\stl\08-string_find_replace.cpp.obj
+  FLAGS = /utf-8 /Zi /Ob0 /Od /RTC1 -MDd
+  LINK_FLAGS = /machine:X86 /debug /INCREMENTAL /subsystem:console
+  LINK_LIBRARIES = kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
+  OBJECT_DIR = CMakeFiles\08-string_find_replace.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_COMPILE_PDB = CMakeFiles\08-string_find_replace.dir\
+  TARGET_FILE = 08-string_find_replace.exe
+  TARGET_IMPLIB = 08-string_find_replace.lib
+  TARGET_PDB = 08-string_find_replace.pdb
+
+# =============================================================================
+# Object build statements for EXECUTABLE target 09-string_compare
+
+
+#############################################
+# Order-only phony target for 09-string_compare
+
+build cmake_object_order_depends_target_09-string_compare: phony || CMakeFiles\09-string_compare.dir
+
+build CMakeFiles\09-string_compare.dir\stl\09-string_compare.cpp.obj: CXX_COMPILER__09-string_compare_Debug D$:\itlike\workSpaceStudy\C&C++\base\cpp-basic-learning\stl\09-string_compare.cpp || cmake_object_order_depends_target_09-string_compare
+  FLAGS = /utf-8 /Zi /Ob0 /Od /RTC1 -MDd -std:c++17
+  INCLUDES = -I"D:\itlike\workSpaceStudy\C&C++\base\cpp-basic-learning\basics" -I"D:\itlike\workSpaceStudy\C&C++\base\cpp-basic-learning\core" -I"D:\itlike\workSpaceStudy\C&C++\base\cpp-basic-learning\stl" -I"D:\itlike\workSpaceStudy\C&C++\base\cpp-basic-learning\template"
+  OBJECT_DIR = CMakeFiles\09-string_compare.dir
+  OBJECT_FILE_DIR = CMakeFiles\09-string_compare.dir\stl
+  TARGET_COMPILE_PDB = CMakeFiles\09-string_compare.dir\
+  TARGET_PDB = 09-string_compare.pdb
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target 09-string_compare
+
+
+#############################################
+# Link the executable 09-string_compare.exe
+
+build 09-string_compare.exe: CXX_EXECUTABLE_LINKER__09-string_compare_Debug CMakeFiles\09-string_compare.dir\stl\09-string_compare.cpp.obj
+  FLAGS = /utf-8 /Zi /Ob0 /Od /RTC1 -MDd
+  LINK_FLAGS = /machine:X86 /debug /INCREMENTAL /subsystem:console
+  LINK_LIBRARIES = kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
+  OBJECT_DIR = CMakeFiles\09-string_compare.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_COMPILE_PDB = CMakeFiles\09-string_compare.dir\
+  TARGET_FILE = 09-string_compare.exe
+  TARGET_IMPLIB = 09-string_compare.lib
+  TARGET_PDB = 09-string_compare.pdb
+
+# =============================================================================
+# Object build statements for EXECUTABLE target 10-string_get
+
+
+#############################################
+# Order-only phony target for 10-string_get
+
+build cmake_object_order_depends_target_10-string_get: phony || CMakeFiles\10-string_get.dir
+
+build CMakeFiles\10-string_get.dir\stl\10-string_get.cpp.obj: CXX_COMPILER__10-string_get_Debug D$:\itlike\workSpaceStudy\C&C++\base\cpp-basic-learning\stl\10-string_get.cpp || cmake_object_order_depends_target_10-string_get
+  FLAGS = /utf-8 /Zi /Ob0 /Od /RTC1 -MDd -std:c++17
+  INCLUDES = -I"D:\itlike\workSpaceStudy\C&C++\base\cpp-basic-learning\basics" -I"D:\itlike\workSpaceStudy\C&C++\base\cpp-basic-learning\core" -I"D:\itlike\workSpaceStudy\C&C++\base\cpp-basic-learning\stl" -I"D:\itlike\workSpaceStudy\C&C++\base\cpp-basic-learning\template"
+  OBJECT_DIR = CMakeFiles\10-string_get.dir
+  OBJECT_FILE_DIR = CMakeFiles\10-string_get.dir\stl
+  TARGET_COMPILE_PDB = CMakeFiles\10-string_get.dir\
+  TARGET_PDB = 10-string_get.pdb
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target 10-string_get
+
+
+#############################################
+# Link the executable 10-string_get.exe
+
+build 10-string_get.exe: CXX_EXECUTABLE_LINKER__10-string_get_Debug CMakeFiles\10-string_get.dir\stl\10-string_get.cpp.obj
+  FLAGS = /utf-8 /Zi /Ob0 /Od /RTC1 -MDd
+  LINK_FLAGS = /machine:X86 /debug /INCREMENTAL /subsystem:console
+  LINK_LIBRARIES = kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
+  OBJECT_DIR = CMakeFiles\10-string_get.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_COMPILE_PDB = CMakeFiles\10-string_get.dir\
+  TARGET_FILE = 10-string_get.exe
+  TARGET_IMPLIB = 10-string_get.lib
+  TARGET_PDB = 10-string_get.pdb
+
+# =============================================================================
+# Object build statements for EXECUTABLE target 11-string_insert_delete
+
+
+#############################################
+# Order-only phony target for 11-string_insert_delete
+
+build cmake_object_order_depends_target_11-string_insert_delete: phony || CMakeFiles\11-string_insert_delete.dir
+
+build CMakeFiles\11-string_insert_delete.dir\stl\11-string_insert_delete.cpp.obj: CXX_COMPILER__11-string_insert_delete_Debug D$:\itlike\workSpaceStudy\C&C++\base\cpp-basic-learning\stl\11-string_insert_delete.cpp || cmake_object_order_depends_target_11-string_insert_delete
+  FLAGS = /utf-8 /Zi /Ob0 /Od /RTC1 -MDd -std:c++17
+  INCLUDES = -I"D:\itlike\workSpaceStudy\C&C++\base\cpp-basic-learning\basics" -I"D:\itlike\workSpaceStudy\C&C++\base\cpp-basic-learning\core" -I"D:\itlike\workSpaceStudy\C&C++\base\cpp-basic-learning\stl" -I"D:\itlike\workSpaceStudy\C&C++\base\cpp-basic-learning\template"
+  OBJECT_DIR = CMakeFiles\11-string_insert_delete.dir
+  OBJECT_FILE_DIR = CMakeFiles\11-string_insert_delete.dir\stl
+  TARGET_COMPILE_PDB = CMakeFiles\11-string_insert_delete.dir\
+  TARGET_PDB = 11-string_insert_delete.pdb
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target 11-string_insert_delete
+
+
+#############################################
+# Link the executable 11-string_insert_delete.exe
+
+build 11-string_insert_delete.exe: CXX_EXECUTABLE_LINKER__11-string_insert_delete_Debug CMakeFiles\11-string_insert_delete.dir\stl\11-string_insert_delete.cpp.obj
+  FLAGS = /utf-8 /Zi /Ob0 /Od /RTC1 -MDd
+  LINK_FLAGS = /machine:X86 /debug /INCREMENTAL /subsystem:console
+  LINK_LIBRARIES = kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
+  OBJECT_DIR = CMakeFiles\11-string_insert_delete.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_COMPILE_PDB = CMakeFiles\11-string_insert_delete.dir\
+  TARGET_FILE = 11-string_insert_delete.exe
+  TARGET_IMPLIB = 11-string_insert_delete.lib
+  TARGET_PDB = 11-string_insert_delete.pdb
+
 
 #############################################
 # Utility command for edit_cache
@@ -2675,11 +2823,15 @@ build 08-class_template_object_do_function_reference: phony 08-class_template_ob
 
 build 08-flowage_structure: phony 08-flowage_structure.exe
 
+build 08-string_find_replace: phony 08-string_find_replace.exe
+
 build 09-class_template_and_inheritance: phony 09-class_template_and_inheritance.exe
 
 build 09-note_on_function_overloading: phony 09-note_on_function_overloading.exe
 
 build 09-one_dimensional_array: phony 09-one_dimensional_array.exe
+
+build 09-string_compare: phony 09-string_compare.exe
 
 build 10-bubble_sort: phony 10-bubble_sort.exe
 
@@ -2687,9 +2839,13 @@ build 10-class: phony 10-class.exe
 
 build 10-class_template_member_function_class_outer_impl: phony 10-class_template_member_function_class_outer_impl.exe
 
+build 10-string_get: phony 10-string_get.exe
+
 build 11-access_permission: phony 11-access_permission.exe
 
 build 11-class_template_sub_file_write: phony 11-class_template_sub_file_write.exe
+
+build 11-string_insert_delete: phony 11-string_insert_delete.exe
 
 build 11-two_dimensional_array: phony 11-two_dimensional_array.exe
 
@@ -2765,7 +2921,7 @@ build 29-IO: phony 29-IO.exe
 #############################################
 # Folder: D:/itlike/workSpaceStudy/C&C++/base/cpp-basic-learning/cmake-build-debug-visual-studio
 
-build all: phony 01-HelloWorld.exe 02-variable.exe 03-constant.exe 04-modifiers_and_data_types.exe 05-escape_character.exe 06-keyboard_input.exe 07-operator.exe 08-flowage_structure.exe 09-one_dimensional_array.exe 10-bubble_sort.exe 11-two_dimensional_array.exe 12-function_definition.exe 13-value_propagation.exe 14-function_declaration.exe 15-swap.exe 15-functions_are_written_in_files.exe 16-pointer.exe 17-null_and_wild_pointers.exe 18-const_modified_pointer.exe 19-pointer_and_array.exe 20-pointer_and_function.exe 21-struct.exe 22-struct_pointer.exe 01-global_area.exe 02-stack_area.exe 03-heap_area.exe 05-reference_as_function_argument.exe 06-function_return_value_by_reference.exe 07-function_parameter_default_values.exe 09-note_on_function_overloading.exe 10-class.exe 11-access_permission.exe 12-constructor_and_destructor.exe 13-init_list.exe 14-static_member.exe 15-const_modified_member_function.exe 16-global_function_friend.exe 17-class_friend.exe 18-member_function_friend.exe 19-plus_operator_overloading.exe 20-left_shift_operator_overloading.exe 21-increment_operator_overloading.exe 22-assignment_operator_overloading.exe 23-relation_operator_overloading.exe 24-functor_operator_overloading.exe 25-polymorphism.exe 26-polymorphic_calculator_case.exe 27-pure_virtual_function.exe 28-virtual_destructor_and_pure_virtual_destructor.exe 29-IO.exe 01-function_template.exe 02-function_template_notes.exe 03-function_template_array_sort.exe 04-ordinary_function_and_function_template_calling_rules.exe 05-class_template.exe 06-the_difference_between_class_template_and_function_template.exe 07-class_template_member_function_create_timing.exe 08-class_template_object_do_function_reference.exe 09-class_template_and_inheritance.exe 10-class_template_member_function_class_outer_impl.exe 11-class_template_sub_file_write.exe 12-class_template_and_friend.exe 13-case_column_array_package.exe 02-vector_built_in_data_type.exe 03-vector_custom_data_type.exe 04-vector_nested_vector.exe 05-string_constructor_function.exe 06-string_assignment.exe 07-string_splice.exe
+build all: phony 01-HelloWorld.exe 02-variable.exe 03-constant.exe 04-modifiers_and_data_types.exe 05-escape_character.exe 06-keyboard_input.exe 07-operator.exe 08-flowage_structure.exe 09-one_dimensional_array.exe 10-bubble_sort.exe 11-two_dimensional_array.exe 12-function_definition.exe 13-value_propagation.exe 14-function_declaration.exe 15-swap.exe 15-functions_are_written_in_files.exe 16-pointer.exe 17-null_and_wild_pointers.exe 18-const_modified_pointer.exe 19-pointer_and_array.exe 20-pointer_and_function.exe 21-struct.exe 22-struct_pointer.exe 01-global_area.exe 02-stack_area.exe 03-heap_area.exe 05-reference_as_function_argument.exe 06-function_return_value_by_reference.exe 07-function_parameter_default_values.exe 09-note_on_function_overloading.exe 10-class.exe 11-access_permission.exe 12-constructor_and_destructor.exe 13-init_list.exe 14-static_member.exe 15-const_modified_member_function.exe 16-global_function_friend.exe 17-class_friend.exe 18-member_function_friend.exe 19-plus_operator_overloading.exe 20-left_shift_operator_overloading.exe 21-increment_operator_overloading.exe 22-assignment_operator_overloading.exe 23-relation_operator_overloading.exe 24-functor_operator_overloading.exe 25-polymorphism.exe 26-polymorphic_calculator_case.exe 27-pure_virtual_function.exe 28-virtual_destructor_and_pure_virtual_destructor.exe 29-IO.exe 01-function_template.exe 02-function_template_notes.exe 03-function_template_array_sort.exe 04-ordinary_function_and_function_template_calling_rules.exe 05-class_template.exe 06-the_difference_between_class_template_and_function_template.exe 07-class_template_member_function_create_timing.exe 08-class_template_object_do_function_reference.exe 09-class_template_and_inheritance.exe 10-class_template_member_function_class_outer_impl.exe 11-class_template_sub_file_write.exe 12-class_template_and_friend.exe 13-case_column_array_package.exe 02-vector_built_in_data_type.exe 03-vector_custom_data_type.exe 04-vector_nested_vector.exe 05-string_constructor_function.exe 06-string_assignment.exe 07-string_splice.exe 08-string_find_replace.exe 09-string_compare.exe 10-string_get.exe 11-string_insert_delete.exe
 
 # =============================================================================
 # Built-in targets
