@@ -1,5 +1,5 @@
 # ninja log v5
-1	71	7112188688342618	build.ninja	35d1a2d8bd25c52d
+1	71	7128587989148872	build.ninja	35d1a2d8bd25c52d
 369	681	7105948656053965	02-variable.exe	b970da570703d3f1
 822	1199	7106051241219783	02-vector_built_in_data_type.exe	73e743dd640c22d1
 1	367	7105948653101368	CMakeFiles/02-variable.dir/basics/02-variable.cpp.obj	c1ecbe09e92fd4f2
@@ -20,13 +20,7 @@
 507	644	7112183790954986	08-string_find_replace.exe	7f652101997d0927
 0	805	7112190942315649	CMakeFiles/09-string_compare.dir/stl/09-string_compare.cpp.obj	d72d7b08c19ae22d
 806	1149	7112190945553086	09-string_compare.exe	eea6a5c575ee67f2
-0	502	7112194563320435	CMakeFiles/10-string_get.dir/stl/10-string_get.cpp.obj	ecc4e17c54e2ae0a
-503	840	7112194566543082	10-string_get.exe	5b23d5d49705c492
 0	523	7112194855715654	CMakeFiles/10-string_get.dir/stl/10-string_get.cpp.obj	ecc4e17c54e2ae0a
 524	676	7112194856946817	10-string_get.exe	5b23d5d49705c492
-0	526	7112196845706915	CMakeFiles/11-string_insert_delete.dir/stl/11-string_insert_delete.cpp.obj	90ed1a34e9c41a78
-526	867	7112196848922025	11-string_insert_delete.exe	26e8b59aecb61e25
-1	410	7112196950621580	CMakeFiles/11-string_insert_delete.dir/stl/11-string_insert_delete.cpp.obj	90ed1a34e9c41a78
-410	544	7112196951672461	11-string_insert_delete.exe	26e8b59aecb61e25
 1	404	7112197051272991	CMakeFiles/11-string_insert_delete.dir/stl/11-string_insert_delete.cpp.obj	90ed1a34e9c41a78
 404	543	7112197052379486	11-string_insert_delete.exe	26e8b59aecb61e25
