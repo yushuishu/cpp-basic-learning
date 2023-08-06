@@ -2815,6 +2815,191 @@ build 13-deque.exe: CXX_EXECUTABLE_LINKER__13-deque_Debug CMakeFiles\13-deque.di
   TARGET_IMPLIB = 13-deque.lib
   TARGET_PDB = 13-deque.pdb
 
+# =============================================================================
+# Object build statements for EXECUTABLE target 14-stack
+
+
+#############################################
+# Order-only phony target for 14-stack
+
+build cmake_object_order_depends_target_14-stack: phony || CMakeFiles\14-stack.dir
+
+build CMakeFiles\14-stack.dir\stl\14-stack.cpp.obj: CXX_COMPILER__14-stack_Debug D$:\itlike\workSpaceStudy\C&C++\base\cpp-basic-learning\stl\14-stack.cpp || cmake_object_order_depends_target_14-stack
+  FLAGS = /utf-8 /Zi /Ob0 /Od /RTC1 -MDd -std:c++17
+  INCLUDES = -I"D:\itlike\workSpaceStudy\C&C++\base\cpp-basic-learning\basics" -I"D:\itlike\workSpaceStudy\C&C++\base\cpp-basic-learning\core" -I"D:\itlike\workSpaceStudy\C&C++\base\cpp-basic-learning\stl" -I"D:\itlike\workSpaceStudy\C&C++\base\cpp-basic-learning\template"
+  OBJECT_DIR = CMakeFiles\14-stack.dir
+  OBJECT_FILE_DIR = CMakeFiles\14-stack.dir\stl
+  TARGET_COMPILE_PDB = CMakeFiles\14-stack.dir\
+  TARGET_PDB = 14-stack.pdb
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target 14-stack
+
+
+#############################################
+# Link the executable 14-stack.exe
+
+build 14-stack.exe: CXX_EXECUTABLE_LINKER__14-stack_Debug CMakeFiles\14-stack.dir\stl\14-stack.cpp.obj
+  FLAGS = /utf-8 /Zi /Ob0 /Od /RTC1 -MDd
+  LINK_FLAGS = /machine:X86 /debug /INCREMENTAL /subsystem:console
+  LINK_LIBRARIES = kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
+  OBJECT_DIR = CMakeFiles\14-stack.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_COMPILE_PDB = CMakeFiles\14-stack.dir\
+  TARGET_FILE = 14-stack.exe
+  TARGET_IMPLIB = 14-stack.lib
+  TARGET_PDB = 14-stack.pdb
+
+# =============================================================================
+# Object build statements for EXECUTABLE target 15-queue
+
+
+#############################################
+# Order-only phony target for 15-queue
+
+build cmake_object_order_depends_target_15-queue: phony || CMakeFiles\15-queue.dir
+
+build CMakeFiles\15-queue.dir\stl\15-queue.cpp.obj: CXX_COMPILER__15-queue_Debug D$:\itlike\workSpaceStudy\C&C++\base\cpp-basic-learning\stl\15-queue.cpp || cmake_object_order_depends_target_15-queue
+  FLAGS = /utf-8 /Zi /Ob0 /Od /RTC1 -MDd -std:c++17
+  INCLUDES = -I"D:\itlike\workSpaceStudy\C&C++\base\cpp-basic-learning\basics" -I"D:\itlike\workSpaceStudy\C&C++\base\cpp-basic-learning\core" -I"D:\itlike\workSpaceStudy\C&C++\base\cpp-basic-learning\stl" -I"D:\itlike\workSpaceStudy\C&C++\base\cpp-basic-learning\template"
+  OBJECT_DIR = CMakeFiles\15-queue.dir
+  OBJECT_FILE_DIR = CMakeFiles\15-queue.dir\stl
+  TARGET_COMPILE_PDB = CMakeFiles\15-queue.dir\
+  TARGET_PDB = 15-queue.pdb
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target 15-queue
+
+
+#############################################
+# Link the executable 15-queue.exe
+
+build 15-queue.exe: CXX_EXECUTABLE_LINKER__15-queue_Debug CMakeFiles\15-queue.dir\stl\15-queue.cpp.obj
+  FLAGS = /utf-8 /Zi /Ob0 /Od /RTC1 -MDd
+  LINK_FLAGS = /machine:X86 /debug /INCREMENTAL /subsystem:console
+  LINK_LIBRARIES = kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
+  OBJECT_DIR = CMakeFiles\15-queue.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_COMPILE_PDB = CMakeFiles\15-queue.dir\
+  TARGET_FILE = 15-queue.exe
+  TARGET_IMPLIB = 15-queue.lib
+  TARGET_PDB = 15-queue.pdb
+
+# =============================================================================
+# Object build statements for EXECUTABLE target 16-list
+
+
+#############################################
+# Order-only phony target for 16-list
+
+build cmake_object_order_depends_target_16-list: phony || CMakeFiles\16-list.dir
+
+build CMakeFiles\16-list.dir\stl\16-list.cpp.obj: CXX_COMPILER__16-list_Debug D$:\itlike\workSpaceStudy\C&C++\base\cpp-basic-learning\stl\16-list.cpp || cmake_object_order_depends_target_16-list
+  FLAGS = /utf-8 /Zi /Ob0 /Od /RTC1 -MDd -std:c++17
+  INCLUDES = -I"D:\itlike\workSpaceStudy\C&C++\base\cpp-basic-learning\basics" -I"D:\itlike\workSpaceStudy\C&C++\base\cpp-basic-learning\core" -I"D:\itlike\workSpaceStudy\C&C++\base\cpp-basic-learning\stl" -I"D:\itlike\workSpaceStudy\C&C++\base\cpp-basic-learning\template"
+  OBJECT_DIR = CMakeFiles\16-list.dir
+  OBJECT_FILE_DIR = CMakeFiles\16-list.dir\stl
+  TARGET_COMPILE_PDB = CMakeFiles\16-list.dir\
+  TARGET_PDB = 16-list.pdb
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target 16-list
+
+
+#############################################
+# Link the executable 16-list.exe
+
+build 16-list.exe: CXX_EXECUTABLE_LINKER__16-list_Debug CMakeFiles\16-list.dir\stl\16-list.cpp.obj
+  FLAGS = /utf-8 /Zi /Ob0 /Od /RTC1 -MDd
+  LINK_FLAGS = /machine:X86 /debug /INCREMENTAL /subsystem:console
+  LINK_LIBRARIES = kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
+  OBJECT_DIR = CMakeFiles\16-list.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_COMPILE_PDB = CMakeFiles\16-list.dir\
+  TARGET_FILE = 16-list.exe
+  TARGET_IMPLIB = 16-list.lib
+  TARGET_PDB = 16-list.pdb
+
+# =============================================================================
+# Object build statements for EXECUTABLE target 17-set
+
+
+#############################################
+# Order-only phony target for 17-set
+
+build cmake_object_order_depends_target_17-set: phony || CMakeFiles\17-set.dir
+
+build CMakeFiles\17-set.dir\stl\17-set.cpp.obj: CXX_COMPILER__17-set_Debug D$:\itlike\workSpaceStudy\C&C++\base\cpp-basic-learning\stl\17-set.cpp || cmake_object_order_depends_target_17-set
+  FLAGS = /utf-8 /Zi /Ob0 /Od /RTC1 -MDd -std:c++17
+  INCLUDES = -I"D:\itlike\workSpaceStudy\C&C++\base\cpp-basic-learning\basics" -I"D:\itlike\workSpaceStudy\C&C++\base\cpp-basic-learning\core" -I"D:\itlike\workSpaceStudy\C&C++\base\cpp-basic-learning\stl" -I"D:\itlike\workSpaceStudy\C&C++\base\cpp-basic-learning\template"
+  OBJECT_DIR = CMakeFiles\17-set.dir
+  OBJECT_FILE_DIR = CMakeFiles\17-set.dir\stl
+  TARGET_COMPILE_PDB = CMakeFiles\17-set.dir\
+  TARGET_PDB = 17-set.pdb
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target 17-set
+
+
+#############################################
+# Link the executable 17-set.exe
+
+build 17-set.exe: CXX_EXECUTABLE_LINKER__17-set_Debug CMakeFiles\17-set.dir\stl\17-set.cpp.obj
+  FLAGS = /utf-8 /Zi /Ob0 /Od /RTC1 -MDd
+  LINK_FLAGS = /machine:X86 /debug /INCREMENTAL /subsystem:console
+  LINK_LIBRARIES = kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
+  OBJECT_DIR = CMakeFiles\17-set.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_COMPILE_PDB = CMakeFiles\17-set.dir\
+  TARGET_FILE = 17-set.exe
+  TARGET_IMPLIB = 17-set.lib
+  TARGET_PDB = 17-set.pdb
+
+# =============================================================================
+# Object build statements for EXECUTABLE target 18-map
+
+
+#############################################
+# Order-only phony target for 18-map
+
+build cmake_object_order_depends_target_18-map: phony || CMakeFiles\18-map.dir
+
+build CMakeFiles\18-map.dir\stl\18-map.cpp.obj: CXX_COMPILER__18-map_Debug D$:\itlike\workSpaceStudy\C&C++\base\cpp-basic-learning\stl\18-map.cpp || cmake_object_order_depends_target_18-map
+  FLAGS = /utf-8 /Zi /Ob0 /Od /RTC1 -MDd -std:c++17
+  INCLUDES = -I"D:\itlike\workSpaceStudy\C&C++\base\cpp-basic-learning\basics" -I"D:\itlike\workSpaceStudy\C&C++\base\cpp-basic-learning\core" -I"D:\itlike\workSpaceStudy\C&C++\base\cpp-basic-learning\stl" -I"D:\itlike\workSpaceStudy\C&C++\base\cpp-basic-learning\template"
+  OBJECT_DIR = CMakeFiles\18-map.dir
+  OBJECT_FILE_DIR = CMakeFiles\18-map.dir\stl
+  TARGET_COMPILE_PDB = CMakeFiles\18-map.dir\
+  TARGET_PDB = 18-map.pdb
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target 18-map
+
+
+#############################################
+# Link the executable 18-map.exe
+
+build 18-map.exe: CXX_EXECUTABLE_LINKER__18-map_Debug CMakeFiles\18-map.dir\stl\18-map.cpp.obj
+  FLAGS = /utf-8 /Zi /Ob0 /Od /RTC1 -MDd
+  LINK_FLAGS = /machine:X86 /debug /INCREMENTAL /subsystem:console
+  LINK_LIBRARIES = kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
+  OBJECT_DIR = CMakeFiles\18-map.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_COMPILE_PDB = CMakeFiles\18-map.dir\
+  TARGET_FILE = 18-map.exe
+  TARGET_IMPLIB = 18-map.lib
+  TARGET_PDB = 18-map.pdb
+
 
 #############################################
 # Utility command for edit_cache
@@ -2941,15 +3126,21 @@ build 13-value_propagation: phony 13-value_propagation.exe
 
 build 14-function_declaration: phony 14-function_declaration.exe
 
+build 14-stack: phony 14-stack.exe
+
 build 14-static_member: phony 14-static_member.exe
 
 build 15-const_modified_member_function: phony 15-const_modified_member_function.exe
 
 build 15-functions_are_written_in_files: phony 15-functions_are_written_in_files.exe
 
+build 15-queue: phony 15-queue.exe
+
 build 15-swap: phony 15-swap.exe
 
 build 16-global_function_friend: phony 16-global_function_friend.exe
+
+build 16-list: phony 16-list.exe
 
 build 16-pointer: phony 16-pointer.exe
 
@@ -2957,7 +3148,11 @@ build 17-class_friend: phony 17-class_friend.exe
 
 build 17-null_and_wild_pointers: phony 17-null_and_wild_pointers.exe
 
+build 17-set: phony 17-set.exe
+
 build 18-const_modified_pointer: phony 18-const_modified_pointer.exe
+
+build 18-map: phony 18-map.exe
 
 build 18-member_function_friend: phony 18-member_function_friend.exe
 
@@ -2999,7 +3194,7 @@ build 29-IO: phony 29-IO.exe
 #############################################
 # Folder: D:/itlike/workSpaceStudy/C&C++/base/cpp-basic-learning/cmake-build-debug-visual-studio
 
-build all: phony 01-HelloWorld.exe 02-variable.exe 03-constant.exe 04-modifiers_and_data_types.exe 05-escape_character.exe 06-keyboard_input.exe 07-operator.exe 08-flowage_structure.exe 09-one_dimensional_array.exe 10-bubble_sort.exe 11-two_dimensional_array.exe 12-function_definition.exe 13-value_propagation.exe 14-function_declaration.exe 15-swap.exe 15-functions_are_written_in_files.exe 16-pointer.exe 17-null_and_wild_pointers.exe 18-const_modified_pointer.exe 19-pointer_and_array.exe 20-pointer_and_function.exe 21-struct.exe 22-struct_pointer.exe 01-global_area.exe 02-stack_area.exe 03-heap_area.exe 05-reference_as_function_argument.exe 06-function_return_value_by_reference.exe 07-function_parameter_default_values.exe 09-note_on_function_overloading.exe 10-class.exe 11-access_permission.exe 12-constructor_and_destructor.exe 13-init_list.exe 14-static_member.exe 15-const_modified_member_function.exe 16-global_function_friend.exe 17-class_friend.exe 18-member_function_friend.exe 19-plus_operator_overloading.exe 20-left_shift_operator_overloading.exe 21-increment_operator_overloading.exe 22-assignment_operator_overloading.exe 23-relation_operator_overloading.exe 24-functor_operator_overloading.exe 25-polymorphism.exe 26-polymorphic_calculator_case.exe 27-pure_virtual_function.exe 28-virtual_destructor_and_pure_virtual_destructor.exe 29-IO.exe 01-function_template.exe 02-function_template_notes.exe 03-function_template_array_sort.exe 04-ordinary_function_and_function_template_calling_rules.exe 05-class_template.exe 06-the_difference_between_class_template_and_function_template.exe 07-class_template_member_function_create_timing.exe 08-class_template_object_do_function_reference.exe 09-class_template_and_inheritance.exe 10-class_template_member_function_class_outer_impl.exe 11-class_template_sub_file_write.exe 12-class_template_and_friend.exe 13-case_column_array_package.exe 02-vector_built_in_data_type.exe 03-vector_custom_data_type.exe 04-vector_nested_vector.exe 05-string_constructor_function.exe 06-string_assignment.exe 07-string_splice.exe 08-string_find_replace.exe 09-string_compare.exe 10-string_get.exe 11-string_insert_delete.exe 12-vector.exe 13-deque.exe
+build all: phony 01-HelloWorld.exe 02-variable.exe 03-constant.exe 04-modifiers_and_data_types.exe 05-escape_character.exe 06-keyboard_input.exe 07-operator.exe 08-flowage_structure.exe 09-one_dimensional_array.exe 10-bubble_sort.exe 11-two_dimensional_array.exe 12-function_definition.exe 13-value_propagation.exe 14-function_declaration.exe 15-swap.exe 15-functions_are_written_in_files.exe 16-pointer.exe 17-null_and_wild_pointers.exe 18-const_modified_pointer.exe 19-pointer_and_array.exe 20-pointer_and_function.exe 21-struct.exe 22-struct_pointer.exe 01-global_area.exe 02-stack_area.exe 03-heap_area.exe 05-reference_as_function_argument.exe 06-function_return_value_by_reference.exe 07-function_parameter_default_values.exe 09-note_on_function_overloading.exe 10-class.exe 11-access_permission.exe 12-constructor_and_destructor.exe 13-init_list.exe 14-static_member.exe 15-const_modified_member_function.exe 16-global_function_friend.exe 17-class_friend.exe 18-member_function_friend.exe 19-plus_operator_overloading.exe 20-left_shift_operator_overloading.exe 21-increment_operator_overloading.exe 22-assignment_operator_overloading.exe 23-relation_operator_overloading.exe 24-functor_operator_overloading.exe 25-polymorphism.exe 26-polymorphic_calculator_case.exe 27-pure_virtual_function.exe 28-virtual_destructor_and_pure_virtual_destructor.exe 29-IO.exe 01-function_template.exe 02-function_template_notes.exe 03-function_template_array_sort.exe 04-ordinary_function_and_function_template_calling_rules.exe 05-class_template.exe 06-the_difference_between_class_template_and_function_template.exe 07-class_template_member_function_create_timing.exe 08-class_template_object_do_function_reference.exe 09-class_template_and_inheritance.exe 10-class_template_member_function_class_outer_impl.exe 11-class_template_sub_file_write.exe 12-class_template_and_friend.exe 13-case_column_array_package.exe 02-vector_built_in_data_type.exe 03-vector_custom_data_type.exe 04-vector_nested_vector.exe 05-string_constructor_function.exe 06-string_assignment.exe 07-string_splice.exe 08-string_find_replace.exe 09-string_compare.exe 10-string_get.exe 11-string_insert_delete.exe 12-vector.exe 13-deque.exe 14-stack.exe 15-queue.exe 16-list.exe 17-set.exe 18-map.exe
 
 # =============================================================================
 # Built-in targets
