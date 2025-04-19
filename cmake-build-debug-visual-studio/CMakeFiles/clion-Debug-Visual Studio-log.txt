@@ -1,4 +1,0 @@
-"D:\app\main\CLion\one\CLion 2022.3.3\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug "-DCMAKE_MAKE_PROGRAM=D:/app/main/CLion/one/CLion 2022.3.3/bin/ninja/win/x64/ninja.exe" -D CMAKE_CXX_FLAGS=/utf-8 -G Ninja -S D:\itlike\workSpaceStudy\C&C++\base\cpp-basic-learning -B D:\itlike\workSpaceStudy\C&C++\base\cpp-basic-learning\cmake-build-debug-visual-studio
--- Configuring done
--- Generating done
--- Build files have been written to: D:/itlike/workSpaceStudy/C&C++/base/cpp-basic-learning/cmake-build-debug-visual-studio
